@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1737CB77220B635D00E9197D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CB76220B635D00E9197D /* AppDelegate.swift */; };
-		1737CB79220B635D00E9197D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CB78220B635D00E9197D /* ViewController.swift */; };
+		1737CB79220B635D00E9197D /* MortarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CB78220B635D00E9197D /* MortarViewController.swift */; };
 		1737CB7C220B635D00E9197D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737CB7A220B635D00E9197D /* Main.storyboard */; };
 		1737CB7E220B635F00E9197D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1737CB7D220B635F00E9197D /* Assets.xcassets */; };
 		1737CB81220B635F00E9197D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1737CB7F220B635F00E9197D /* LaunchScreen.storyboard */; };
 		1737CB8C220B635F00E9197D /* MortarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CB8B220B635F00E9197D /* MortarTests.swift */; };
 		1737CB97220B635F00E9197D /* MortarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CB96220B635F00E9197D /* MortarUITests.swift */; };
+		1737CBA5220B65DF00E9197D /* MortarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737CBA4220B65DF00E9197D /* MortarViewCell.swift */; };
+		173B3EEB220B6BD300C9D159 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B3EEA220B6BD300C9D159 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		1737CB73220B635D00E9197D /* Mortar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mortar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1737CB76220B635D00E9197D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1737CB78220B635D00E9197D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1737CB78220B635D00E9197D /* MortarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortarViewController.swift; sourceTree = "<group>"; };
 		1737CB7B220B635D00E9197D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1737CB7D220B635F00E9197D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1737CB80220B635F00E9197D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		1737CB92220B635F00E9197D /* MortarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1737CB96220B635F00E9197D /* MortarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortarUITests.swift; sourceTree = "<group>"; };
 		1737CB98220B635F00E9197D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1737CBA4220B65DF00E9197D /* MortarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortarViewCell.swift; sourceTree = "<group>"; };
+		173B3EEA220B6BD300C9D159 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				1737CB76220B635D00E9197D /* AppDelegate.swift */,
-				1737CB78220B635D00E9197D /* ViewController.swift */,
+				1737CB78220B635D00E9197D /* MortarViewController.swift */,
+				173B3EEA220B6BD300C9D159 /* Extensions.swift */,
+				1737CBA4220B65DF00E9197D /* MortarViewCell.swift */,
 				1737CB7A220B635D00E9197D /* Main.storyboard */,
 				1737CB7D220B635F00E9197D /* Assets.xcassets */,
 				1737CB7F220B635F00E9197D /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1737CB79220B635D00E9197D /* ViewController.swift in Sources */,
+				1737CBA5220B65DF00E9197D /* MortarViewCell.swift in Sources */,
+				1737CB79220B635D00E9197D /* MortarViewController.swift in Sources */,
 				1737CB77220B635D00E9197D /* AppDelegate.swift in Sources */,
+				173B3EEB220B6BD300C9D159 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR9JRR7PY;
 				INFOPLIST_FILE = Mortar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.photoshelter.Mortar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamduran.Mortar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR9JRR7PY;
 				INFOPLIST_FILE = Mortar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.photoshelter.Mortar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abrahamduran.Mortar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
